@@ -1,0 +1,440 @@
+<saw:report xmlns:saw="com.siebel.analytics.web/report/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sawx="com.siebel.analytics.web/expression/v1.1" xmlVersion="201201160">
+   <saw:criteria xsi:type="saw:simpleCriteria" subjectArea="&quot;Bookings-Reservation&quot;">
+      <saw:columns>
+         <saw:column xsi:type="saw:regularColumn" columnID="c0481868f7fb8387c">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cf661a64576d1b653">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property Name"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c01e1b5904cc4f9e3">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Arrival Date"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cf0e57a1cb3dd3a24">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Arrival Time"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true"/></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c770164c24ac20198">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Departure Date"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true"/></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c000d7b5de164be86">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Number of Nights"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true"/></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c44674b40cf671b40">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Reservation Status"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true"/></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c054ce8cbd8c57000">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Individual Last Name"||', '||"Details"."Individual First Name"</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Guest Name</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c4d6e8ceef3497afd">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Confirmation Number"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="ca050f83fa2c968f5">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."External Reference"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c13e30265f6ae416f">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cfc62cf15746f09f5">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Name"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c32c0548948af1d8f">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Guest Type"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c35171b29e7304234">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Purpose of Stay"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c05b6483b762c4dd8">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Adults"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cb140a78c0f623b97">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Children"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c8b4bd4a301485484">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Children Ages"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c3eeda51ab1aea3cb">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Total Cost of Stay"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cd44eb84cfc8b48aa">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Additional Details"."VIP Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c321c87219551e068">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">LISTAGG("Reservation Preferences"."Preference")</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Reservation Preferences</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Preference</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c744ae993dc323789">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Rates"."Rate Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c77caa6c8fa9f5c24">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Rates"."Effective Rate Amount"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c241e414a168e2fb5">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Market Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c565e74ca4a7d4bf6">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Source Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c48630b538c98841b">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Origin Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cce497aea1a7fec35">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">LISTAGG("Packages"."Package Code")</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Packages</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Package Code</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c2d658cb78a4af512">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Item Inventory"."Item Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c14cbb2b9c6ac572f">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Item Inventory"."Quantity"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c91aa60bbf9e0eb95">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Item Inventory"."Start Date"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c4c02122610e557a9">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Item Inventory"."End Date"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c33d7425d0e0b3ab0">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Class"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cf786cb628dafd42d">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Type"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c2846e7af0264af02">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Number"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c0677c61f30d7a400">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Guest Details"."Email"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c009847f73a8ca886">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Guest Details"."Last Name"||', '||"Guest Details"."First Name"</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Guest Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Accompanying Guest</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cdff23aaeafff61c7">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN LISTAGG("Reservation Notes"."Comment") ELSE NULL END</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Reservation Notes</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Comments</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cb6ac07af6b4ea13e">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Membership"."Membership Type"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c4d5d9858e4eb8571">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Membership"."Membership Level"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c7d5128e2d7d91157">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Shares"."Shared Confirmation No"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cf47314860c6ce0bf">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Shares"."Shared Guest Name"</sawx:expr></saw:columnFormula></saw:column></saw:columns>
+      <saw:filter>
+         <sawx:expr xsi:type="sawx:logical" op="and">
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Arrival Date"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:comparison" op="equal">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Reservation Status"</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">RESERVED</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Code"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Name"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Additional Details"."VIP Code"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Rates"."Rate Code"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Market Code"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Source Code"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Origin Code"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Class"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Type"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Membership"."Membership Type"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Membership"."Membership Level"</sawx:expr></sawx:expr></sawx:expr></saw:filter></saw:criteria>
+   <saw:views currentView="0">
+      <saw:view xsi:type="saw:compoundView" name="compoundView!1">
+         <saw:cvTable>
+            <saw:cvRow>
+               <saw:cvCell viewName="titleView!1"/></saw:cvRow>
+            <saw:cvRow>
+               <saw:cvCell viewName="tableView!1"/></saw:cvRow></saw:cvTable></saw:view>
+      <saw:view xsi:type="saw:titleView" name="titleView!1"/>
+      <saw:view xsi:type="saw:tableView" name="tableView!1" scrollingEnabled="false" rowsPerPage="500" repeat="false">
+         <saw:edges>
+            <saw:edge axis="page" showColumnHeader="true"/>
+            <saw:edge axis="section">
+               <saw:edgeLayers>
+                  <saw:edgeLayer type="column" columnID="c0481868f7fb8387c"/>
+                  <saw:edgeLayer type="column" columnID="cf661a64576d1b653"/></saw:edgeLayers></saw:edge>
+            <saw:edge axis="row" showColumnHeader="true">
+               <saw:displayGrandTotals>
+                  <saw:displayGrandTotal id="gt_row" grandTotalPosition="after"/></saw:displayGrandTotals>
+               <saw:edgeLayers>
+                  <saw:edgeLayer type="column" columnID="c01e1b5904cc4f9e3">
+                     <saw:levels>
+                        <saw:level>
+                           <saw:displaySubTotal id="st_c01e1b5904cc4f9e3" subTotalPosition="after"/></saw:level></saw:levels></saw:edgeLayer>
+                  <saw:edgeLayer type="column" columnID="cf0e57a1cb3dd3a24"/>
+                  <saw:edgeLayer type="column" columnID="c770164c24ac20198"/>
+                  <saw:edgeLayer type="column" columnID="c000d7b5de164be86" aggRule="sum"/>
+                  <saw:edgeLayer type="column" columnID="c44674b40cf671b40"/>
+                  <saw:edgeLayer type="column" columnID="c054ce8cbd8c57000"/>
+                  <saw:edgeLayer type="column" columnID="c4d6e8ceef3497afd"/>
+                  <saw:edgeLayer type="column" columnID="ca050f83fa2c968f5"/>
+                  <saw:edgeLayer type="column" columnID="c13e30265f6ae416f"/>
+                  <saw:edgeLayer type="column" columnID="cfc62cf15746f09f5"/>
+                  <saw:edgeLayer type="column" columnID="c32c0548948af1d8f"/>
+                  <saw:edgeLayer type="column" columnID="c35171b29e7304234"/>
+                  <saw:edgeLayer type="column" columnID="c05b6483b762c4dd8"/>
+                  <saw:edgeLayer type="column" columnID="cb140a78c0f623b97"/>
+                  <saw:edgeLayer type="column" columnID="c8b4bd4a301485484"/>
+                  <saw:edgeLayer type="column" columnID="cd44eb84cfc8b48aa"/>
+                  <saw:edgeLayer type="column" columnID="c321c87219551e068"/>
+                  <saw:edgeLayer type="column" columnID="c744ae993dc323789"/>
+                  <saw:edgeLayer type="column" columnID="c77caa6c8fa9f5c24"/>
+                  <saw:edgeLayer type="column" columnID="c241e414a168e2fb5"/>
+                  <saw:edgeLayer type="column" columnID="c565e74ca4a7d4bf6"/>
+                  <saw:edgeLayer type="column" columnID="c48630b538c98841b"/>
+                  <saw:edgeLayer type="column" columnID="cce497aea1a7fec35"/>
+                  <saw:edgeLayer type="column" columnID="c2d658cb78a4af512"/>
+                  <saw:edgeLayer type="column" columnID="c14cbb2b9c6ac572f"/>
+                  <saw:edgeLayer type="column" columnID="c91aa60bbf9e0eb95"/>
+                  <saw:edgeLayer type="column" columnID="c4c02122610e557a9"/>
+                  <saw:edgeLayer type="column" columnID="c33d7425d0e0b3ab0"/>
+                  <saw:edgeLayer type="column" columnID="cf786cb628dafd42d"/>
+                  <saw:edgeLayer type="column" columnID="c2846e7af0264af02"/>
+                  <saw:edgeLayer type="column" columnID="c0677c61f30d7a400"/>
+                  <saw:edgeLayer type="column" columnID="c009847f73a8ca886"/>
+                  <saw:edgeLayer type="column" columnID="cdff23aaeafff61c7"/>
+                  <saw:edgeLayer type="column" columnID="cb6ac07af6b4ea13e"/>
+                  <saw:edgeLayer type="column" columnID="c4d5d9858e4eb8571"/>
+                  <saw:edgeLayer type="column" columnID="c7d5128e2d7d91157"/>
+                  <saw:edgeLayer type="column" columnID="cf47314860c6ce0bf"/>
+                  <saw:edgeLayer type="column" columnID="c3eeda51ab1aea3cb"/></saw:edgeLayers></saw:edge>
+            <saw:edge axis="column" showColumnHeader="rollover"/></saw:edges></saw:view></saw:views>
+   <saw:prompts scope="report" subjectArea="&quot;Bookings-Reservation&quot;" layout="horizontal">
+      <saw:promptStep setWidthToAllPrompts="true" labelPosition="above" buttonsPosition="side">
+         <saw:individualPrompts>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c42" subjectArea="&quot;Bookings-Reservation&quot;" required="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c43" subjectArea="&quot;Bookings-Reservation&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Arrival Date"</sawx:expr></saw:formula>
+               <saw:promptOperator op="between"/>
+               <saw:promptUIControl xsi:type="saw:calendar">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="sql" usingCodeValue="false">
+                  <saw:promptDefaultValue>SELECT "Details"."Arrival Date" FROM "Bookings-Reservation" where "Details"."Arrival Date" = current_date</saw:promptDefaultValue>
+                  <saw:promptDefaultValue>SELECT "Details"."Arrival Date" FROM "Bookings-Reservation" where "Details"."Arrival Date" = current_date</saw:promptDefaultValue></saw:promptDefaultValues>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c44" subjectArea="&quot;Bookings-Reservation&quot;" required="false">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Daily Details"."Stay Date"</sawx:expr></saw:formula>
+               <saw:promptOperator op="between"/>
+               <saw:promptUIControl xsi:type="saw:calendar">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c45" subjectArea="&quot;Bookings-Reservation&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Reservation Status"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="specificValue" usingCodeValue="false">
+                  <saw:promptDefaultValue>RESERVED</saw:promptDefaultValue></saw:promptDefaultValues>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:specificChoices">
+                  <saw:promptChoices>
+                     <saw:promptChoice>
+                        <saw:value>CHECKED IN</saw:value></saw:promptChoice>
+                     <saw:promptChoice>
+                        <saw:value>NO SHOW</saw:value></saw:promptChoice>
+                     <saw:promptChoice>
+                        <saw:value>PROSPECT</saw:value></saw:promptChoice>
+                     <saw:promptChoice>
+                        <saw:value>RESERVED</saw:value></saw:promptChoice>
+                     <saw:promptChoice>
+                        <saw:value>WAITLIST</saw:value></saw:promptChoice></saw:promptChoices></saw:promptSource></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c46" subjectArea="&quot;Bookings-Reservation&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Code"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c47" subjectArea="&quot;Bookings-Reservation&quot;" required="false">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Name"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c48" subjectArea="&quot;Bookings-Reservation&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Additional Details"."VIP Code"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c49" subjectArea="&quot;Bookings-Reservation&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Rates"."Rate Code"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c50" subjectArea="&quot;Bookings-Reservation&quot;" required="false">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Market Code"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c51" subjectArea="&quot;Bookings-Reservation&quot;" required="false">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Marketing"."Source Code"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c52" subjectArea="&quot;Bookings-Reservation&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Class"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c53" subjectArea="&quot;Bookings-Reservation&quot;" required="false">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Type"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c54" subjectArea="&quot;Bookings-Reservation&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Membership"."Membership Type"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c55" subjectArea="&quot;Bookings-Reservation&quot;" required="false">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Membership"."Membership Level"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="false">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt></saw:individualPrompts>
+         <saw:customWidth width="120" using="custompixels"/>
+         <saw:title>
+            <saw:caption>
+               <saw:text>Arrivals Detiaied</saw:text></saw:caption></saw:title></saw:promptStep></saw:prompts></saw:report>
