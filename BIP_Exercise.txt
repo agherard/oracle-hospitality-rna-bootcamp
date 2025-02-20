@@ -1,0 +1,39 @@
+Create BI Publisher Report:  
+Subject Area:  Statistics – Mangers Report
+1.	Use Guide Me
+2.	Landscape and Table
+3.	Fields: 
+•	Property
+•	Property Name
+•	Year
+•	Month
+•	Business Date
+•	Day (if Possible)
+•	Reservation
+•	Cancel Reservation
+•	Occupied Rooms
+•	Arrival Rooms
+•	Departure Rooms
+•	Guests In House
+•	Arrival Persons
+•	Departure Persons
+•	VIP Guests
+•	Memberships In House Persons
+•	Room Revenue
+•	Average Daily Rate
+•	F&B Revenue
+•	Other Revenue
+•	Total Revenue
+•	Individual Room Revenue
+•	Group Room Revenue
+
+4.	View Report
+5.	Select on Edit Report
+6.	Parameters: 
+•	Property equal to choice list
+•	Year equal to choice list
+•	Month equal to choice list
+•	Business Date
+
+7.	Properties: 
+•	Uncheck auto run
