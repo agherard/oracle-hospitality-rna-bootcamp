@@ -1,0 +1,18 @@
+1.	Open Data Visualizer
+2.	Create Project using subject area Statistics – Reservation Daily
+3.	Using a table layout select the below attributes
+    a.	County Code
+    b.	Country
+    c.	Room Nights
+    d.	Stay Adults
+    e.	Stay Children
+    f.	Room Revenue
+    g.	Total Revenue
+4.	Add Filter for Stay Year
+5.	Create a second Canvas
+6.	Change visualization type to MAP
+7.	Add country code to category
+8.	Add Room Nights to Color
+9.	Add Total Revenue to Size
+10.	Under the Color section, change the color to a different scheme
+11.	Create a presentation view with both canvas’ having the Map be the first view
