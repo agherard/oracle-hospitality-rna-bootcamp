@@ -1,0 +1,38 @@
+<saw:report xmlns:saw="com.siebel.analytics.web/report/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sawx="com.siebel.analytics.web/expression/v1.1" xmlVersion="201201160">
+   <saw:criteria xsi:type="saw:simpleCriteria" subjectArea="&quot;Bookings-Reservation&quot;">
+      <saw:columns>
+         <saw:column xsi:type="saw:regularColumn" columnID="c40c116ee751f14e6">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Guest Details"."Name ID"</sawx:expr></saw:columnFormula></saw:column></saw:columns>
+      <saw:filter>
+         <sawx:expr xsi:type="sawx:logical" op="and">
+            <sawx:expr xsi:type="sawx:sql">"Details"."Arrival Date" = current_date</sawx:expr>
+            <sawx:expr xsi:type="sawx:list" op="notIn">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Reservation Status"</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">CANCELLED</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">NO SHOW</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:list" op="notIn">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Class"</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">ALL</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSE</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSEUDO</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSEUDO_ROOMS</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSUEDO</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></sawx:expr></sawx:expr></saw:filter></saw:criteria>
+   <saw:views currentView="0">
+      <saw:view xsi:type="saw:compoundView" name="compoundView!1">
+         <saw:cvTable>
+            <saw:cvRow>
+               <saw:cvCell viewName="titleView!1"/></saw:cvRow>
+            <saw:cvRow>
+               <saw:cvCell viewName="tableView!1"/></saw:cvRow></saw:cvTable></saw:view>
+      <saw:view xsi:type="saw:titleView" name="titleView!1"/>
+      <saw:view xsi:type="saw:tableView" name="tableView!1" scrollingEnabled="true">
+         <saw:edges>
+            <saw:edge axis="page" showColumnHeader="true"/>
+            <saw:edge axis="section"/>
+            <saw:edge axis="row" showColumnHeader="true">
+               <saw:edgeLayers>
+                  <saw:edgeLayer type="column" columnID="c40c116ee751f14e6"/></saw:edgeLayers></saw:edge>
+            <saw:edge axis="column" showColumnHeader="rollover"/></saw:edges></saw:view></saw:views></saw:report>
