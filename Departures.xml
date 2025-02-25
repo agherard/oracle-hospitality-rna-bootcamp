@@ -18,28 +18,49 @@
                   <saw:text>Guest Name</saw:text></saw:caption></saw:columnHeading></saw:column>
          <saw:column xsi:type="saw:regularColumn" columnID="c79e5c1543a9a037c">
             <saw:columnFormula>
-               <sawx:expr xsi:type="sawx:sqlExpression">CASE WHEN "Guest Details"."Last Name" is not null THEN "Guest Details"."Last Name"||', '||"Guest Details"."First Name" ELSE NULL END</sawx:expr></saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Guest Details"."Last Name"||', '||"Guest Details"."First Name"</sawx:expr></saw:columnFormula>
             <saw:tableHeading>
                <saw:caption fmt="text">
                   <saw:text>Guest Details</saw:text></saw:caption></saw:tableHeading>
             <saw:columnHeading>
                <saw:caption fmt="text">
                   <saw:text>Accompanying Name</saw:text></saw:caption></saw:columnHeading></saw:column>
-         <saw:column xsi:type="saw:regularColumn" columnID="cd010857510bf24b6">
+         <saw:column xsi:type="saw:regularColumn" columnID="ce5b86f1aeba1c312">
             <saw:columnFormula>
-               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Pick Up Station"</sawx:expr></saw:columnFormula></saw:column>
-         <saw:column xsi:type="saw:regularColumn" columnID="c7349ca93b1ebdce1">
-            <saw:columnFormula>
-               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Pick Up Carrier Code"</sawx:expr></saw:columnFormula></saw:column>
-         <saw:column xsi:type="saw:regularColumn" columnID="c088bd02c94e3113e">
-            <saw:columnFormula>
-               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Pick Up Time"</sawx:expr></saw:columnFormula></saw:column>
-         <saw:column xsi:type="saw:regularColumn" columnID="cb563db0d165ac4b8">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Adults"+"Stay Details"."Children"</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Stay Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Persons</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c09654f9d62eac76c">
             <saw:columnFormula>
                <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Name"</sawx:expr></saw:columnFormula></saw:column>
-         <saw:column xsi:type="saw:regularColumn" columnID="c8c7828406df831f0">
+         <saw:column xsi:type="saw:regularColumn" columnID="c49e51a783a836ce0">
             <saw:columnFormula>
-               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Additional Details"."VIP Description"</sawx:expr></saw:columnFormula></saw:column></saw:columns>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Additional Details"."VIP Description"</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Profiles-Individuals - Additional Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>VIP Code Description</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cbf52e72ecae75e60">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Drop Off Type Description"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c9e18073b2560ff3d">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Drop Off Station"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c479d0fca08bcf2bb">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Drop Off Carrier Code"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c0685baf943459693">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Drop Off Type"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cd7a71f4c320472c7">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Transportation"."Drop Off Time"</sawx:expr></saw:columnFormula></saw:column></saw:columns>
       <saw:filter>
          <sawx:expr xsi:type="sawx:logical" op="and">
             <sawx:expr xsi:type="sawx:list" op="notIn">
@@ -74,10 +95,13 @@
                   <saw:edgeLayer type="column" columnID="cd49659f2d27e2c10"/>
                   <saw:edgeLayer type="column" columnID="c13991f7d9cf26758"/>
                   <saw:edgeLayer type="column" columnID="ca03b1b92aaa26523"/>
-                  <saw:edgeLayer type="column" columnID="c8c7828406df831f0"/>
                   <saw:edgeLayer type="column" columnID="c79e5c1543a9a037c"/>
-                  <saw:edgeLayer type="column" columnID="cd010857510bf24b6"/>
-                  <saw:edgeLayer type="column" columnID="c7349ca93b1ebdce1"/>
-                  <saw:edgeLayer type="column" columnID="c088bd02c94e3113e"/>
-                  <saw:edgeLayer type="column" columnID="cb563db0d165ac4b8"/></saw:edgeLayers></saw:edge>
+                  <saw:edgeLayer type="column" columnID="ce5b86f1aeba1c312"/>
+                  <saw:edgeLayer type="column" columnID="c09654f9d62eac76c"/>
+                  <saw:edgeLayer type="column" columnID="c49e51a783a836ce0"/>
+                  <saw:edgeLayer type="column" columnID="cbf52e72ecae75e60"/>
+                  <saw:edgeLayer type="column" columnID="c0685baf943459693"/>
+                  <saw:edgeLayer type="column" columnID="c9e18073b2560ff3d"/>
+                  <saw:edgeLayer type="column" columnID="c479d0fca08bcf2bb"/>
+                  <saw:edgeLayer type="column" columnID="cd7a71f4c320472c7"/></saw:edgeLayers></saw:edge>
             <saw:edge axis="column" showColumnHeader="rollover"/></saw:edges></saw:view></saw:views></saw:report>
