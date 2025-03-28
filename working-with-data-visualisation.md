@@ -67,7 +67,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 6. Choose the color you would like to display, and select done
 ![alt text](images/manage-color-assigments.png "Manage Colors Assignments")
 
-## 5. Saving the Data Visualizer Projec
+## 5. Saving the Data Visualizer Project
 
 1. Select the dropdown arrow, next to the Disk Icon in the top right corner and choose Save As
 ![alt text](images/saving-dv-project.png "Saving Data Visualiser Project")
