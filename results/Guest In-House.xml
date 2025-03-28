@@ -1,0 +1,77 @@
+<saw:report xmlns:saw="com.siebel.analytics.web/report/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sawx="com.siebel.analytics.web/expression/v1.1" xmlVersion="201201160">
+   <saw:criteria xsi:type="saw:simpleCriteria" subjectArea="&quot;Bookings-Reservation&quot;">
+      <saw:columns>
+         <saw:column xsi:type="saw:regularColumn" columnID="cd49659f2d27e2c10">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c13991f7d9cf26758">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Number"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="ca03b1b92aaa26523">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Guest Details"."Last Name"||', '||"Profiles-Individuals - Guest Details"."First Name"</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Profiles-Individuals - Guest Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Guest Name</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c7c49e383653f4d64">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Profiles-Individuals - Additional Details"."VIP Description"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c79e5c1543a9a037c">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">CASE WHEN "Guest Details"."Last Name" is not null THEN "Guest Details"."Last Name"||', '||"Guest Details"."First Name" ELSE NULL END</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Guest Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Accompanying Name</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cf8bff4fe3510bb28">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Arrival Date"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="ce801b12c67ffd636">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Departure Date"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c09654f9d62eac76c">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Details"."Block Name"</sawx:expr></saw:columnFormula></saw:column></saw:columns>
+      <saw:filter>
+         <sawx:expr xsi:type="sawx:logical" op="and">
+            <sawx:expr xsi:type="sawx:list" op="notIn">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room"."Room Class"</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">ALL</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">ALL_ROOMS</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSE</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSEUDO</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSEUDO_ROOMS</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">PSUEDO</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:comparison" op="equal">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Reservation Status"</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">CHECKED IN</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></sawx:expr></sawx:expr></saw:filter></saw:criteria>
+   <saw:views currentView="0">
+      <saw:view xsi:type="saw:compoundView" name="compoundView!1">
+         <saw:cvTable>
+            <saw:cvRow>
+               <saw:cvCell viewName="titleView!1"/></saw:cvRow>
+            <saw:cvRow>
+               <saw:cvCell viewName="tableView!1"/></saw:cvRow></saw:cvTable></saw:view>
+      <saw:view xsi:type="saw:titleView" name="titleView!1"/>
+      <saw:view xsi:type="saw:tableView" name="tableView!1" scrollingEnabled="false" rowsPerPage="500" repeat="false">
+         <saw:edges>
+            <saw:edge axis="page" showColumnHeader="true"/>
+            <saw:edge axis="section"/>
+            <saw:edge axis="row" showColumnHeader="true">
+               <saw:edgeLayers>
+                  <saw:edgeLayer type="column" columnID="cd49659f2d27e2c10"/>
+                  <saw:edgeLayer type="column" columnID="c13991f7d9cf26758"/>
+                  <saw:edgeLayer type="column" columnID="ca03b1b92aaa26523"/>
+                  <saw:edgeLayer type="column" columnID="c7c49e383653f4d64"/>
+                  <saw:edgeLayer type="column" columnID="c79e5c1543a9a037c"/>
+                  <saw:edgeLayer type="column" columnID="cf8bff4fe3510bb28"/>
+                  <saw:edgeLayer type="column" columnID="ce801b12c67ffd636"/>
+                  <saw:edgeLayer type="column" columnID="c09654f9d62eac76c"/></saw:edgeLayers></saw:edge>
+            <saw:edge axis="column" showColumnHeader="rollover"/></saw:edges></saw:view></saw:views></saw:report>

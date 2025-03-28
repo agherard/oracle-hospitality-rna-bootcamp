@@ -1,0 +1,71 @@
+<saw:report xmlns:saw="com.siebel.analytics.web/report/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sawx="com.siebel.analytics.web/expression/v1.1" xmlVersion="201201160">   
+   <saw:criteria xsi:type="saw:simpleCriteria" subjectArea="&quot;Profiles-Accounts&quot;">      
+      <saw:columns>         
+         <saw:column xsi:type="saw:regularColumn" columnID="c60713bb92d476f41">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Account Information"."Profile Type Description"</sawx:expr></saw:columnFormula></saw:column>         
+         <saw:column xsi:type="saw:regularColumn" columnID="c42951980aeb32360">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Account Information"."Account Name"</sawx:expr></saw:columnFormula></saw:column>         
+         <saw:column xsi:type="saw:regularColumn" columnID="c717ff52f784db7cc">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Non Revenue Facts"."Individual Room Nights"</sawx:expr></saw:columnFormula></saw:column>         
+         <saw:column xsi:type="saw:regularColumn" columnID="c87ccddae1205a61b">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Local Revenue Facts"."Individual Room Revenue Net"</sawx:expr></saw:columnFormula></saw:column>         
+         <saw:column xsi:type="saw:regularColumn" columnID="cca33ee3fa0f5b85c">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">RANK("Local Revenue Facts"."Individual Room Revenue Net")</sawx:expr></saw:columnFormula>            
+            <saw:tableHeading>               
+               <saw:caption fmt="text">                  
+                  <saw:text>Local Revenue Facts</saw:text></saw:caption></saw:tableHeading>            
+            <saw:columnHeading>               
+               <saw:caption fmt="text">                  
+                  <saw:text>Rank Revenue</saw:text></saw:caption></saw:columnHeading></saw:column>         
+         <saw:column xsi:type="saw:regularColumn" columnID="c702797de2a97c914">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Address &amp; Communication"."City"</sawx:expr></saw:columnFormula></saw:column>         
+         <saw:column xsi:type="saw:regularColumn" columnID="cf1d8ed324b9afdd7">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Address &amp; Communication"."State"</sawx:expr></saw:columnFormula></saw:column>         
+         <saw:column xsi:type="saw:regularColumn" columnID="c0cfd9f0f8cc3832d">            
+            <saw:columnFormula>               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Address &amp; Communication"."Country"</sawx:expr></saw:columnFormula></saw:column></saw:columns>      
+      <saw:filter>         
+         <sawx:expr xsi:type="sawx:logical" op="and">            
+            <sawx:expr xsi:type="sawx:comparison" op="between">               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Stay Dates"."Stay Date"</sawx:expr>               
+               <sawx:expr xsi:type="xsd:date">2024-07-01</sawx:expr>               
+               <sawx:expr xsi:type="xsd:date">2024-09-30</sawx:expr></sawx:expr>            
+            <sawx:expr xsi:type="sawx:comparison" op="equal">               
+               <sawx:expr xsi:type="sawx:sqlExpression">"Account Information"."Profile Type Description"</sawx:expr>               
+               <sawx:expr xsi:type="xsd:string">COMPANY</sawx:expr></sawx:expr>            
+            <sawx:expr xsi:type="sawx:rank" op="bottom">               
+               <sawx:expr xsi:type="sawx:sqlExpression">RANK("Local Revenue Facts"."Individual Room Revenue Net")</sawx:expr>               
+               <sawx:expr xsi:type="xsd:decimal">100</sawx:expr></sawx:expr></sawx:expr></saw:filter></saw:criteria>   
+   <saw:views currentView="0">      
+      <saw:view xsi:type="saw:compoundView" name="compoundView!1">         
+         <saw:cvTable>            
+            <saw:cvRow>               
+               <saw:cvCell viewName="titleView!1"/></saw:cvRow>            
+            <saw:cvRow>               
+               <saw:cvCell viewName="tableView!1"/></saw:cvRow></saw:cvTable></saw:view>      
+      <saw:view xsi:type="saw:titleView" name="titleView!1"/>      
+      <saw:view xsi:type="saw:tableView" name="tableView!1" scrollingEnabled="false" rowsPerPage="500" repeat="false">         
+         <saw:edges>            
+            <saw:edge axis="page" showColumnHeader="true"/>            
+            <saw:edge axis="section">               
+               <saw:edgeLayers/></saw:edge>            
+            <saw:edge axis="row" showColumnHeader="true">               
+               <saw:edgeLayers>                  
+                  <saw:edgeLayer type="column" columnID="c42951980aeb32360"/>                  
+                  <saw:edgeLayer type="column" columnID="c60713bb92d476f41"/>                  
+                  <saw:edgeLayer type="column" columnID="c702797de2a97c914"/>                  
+                  <saw:edgeLayer type="column" columnID="cf1d8ed324b9afdd7"/>                  
+                  <saw:edgeLayer type="column" columnID="c0cfd9f0f8cc3832d"/>                  
+                  <saw:edgeLayer type="column" columnID="c717ff52f784db7cc"/>                  
+                  <saw:edgeLayer type="column" columnID="c87ccddae1205a61b"/>                  
+                  <saw:edgeLayer type="column" columnID="cca33ee3fa0f5b85c"/></saw:edgeLayers>               
+               <saw:columnOrder>                  
+                  <saw:columnOrderRef columnID="cca33ee3fa0f5b85c" direction="ascending"/></saw:columnOrder></saw:edge>            
+				  <saw:edge axis="column" showColumnHeader="rollover"/></saw:edges></saw:view></saw:views></saw:report>
