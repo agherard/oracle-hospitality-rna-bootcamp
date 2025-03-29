@@ -25,6 +25,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 3.	Click the NEXT button
 
 4.	Set Page Options to Landscape and Layout to Table
+
 ![alt text](images/bip-report-layout.png "BIP Report with landscape and table layout")
 
 5.	Click the NEXT button
