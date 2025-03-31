@@ -1,4 +1,4 @@
-# LAB 4 - WORKING WITH DATA VISUALISATION
+# Working with Data Visualisation
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
