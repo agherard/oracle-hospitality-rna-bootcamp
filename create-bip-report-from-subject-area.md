@@ -8,7 +8,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 ## 1. Accessing Reports
 
 1. Access the R&A Portal application from your instance or the provided instance.
-2. b.	From the Portal home page, select on the Reports and Dashboards Tile, alternatively from the drop down menu you can select Reports and Dashboards.
+2. From the Portal home page, select on the Reports and Dashboards Tile, alternatively from the drop down menu you can select Reports and Dashboards.
 
 ![alt text](images/rna-portal.png "R&A Portal Landing Page")
 
