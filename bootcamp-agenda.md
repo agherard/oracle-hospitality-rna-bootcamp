@@ -31,4 +31,3 @@
 |15:30-15:40|Coffee                                                                         |
 |15:40-16:10|R&A Roadmap                                                                    |
 |16:10-17:00|R&A Q&A                                                                        |
-|17:00-18:00|Happy Hour (finger food & drinks)|
