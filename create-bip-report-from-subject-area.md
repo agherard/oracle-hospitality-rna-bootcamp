@@ -1,4 +1,4 @@
-# Create BIP Report from Subject Area
+# Create BI Publisher Report from Subject Area
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
