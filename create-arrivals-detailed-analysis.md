@@ -104,13 +104,13 @@ __"Details"."Individual Last Name"||', '||"Details"."Individual First Name"__
 * Select the custom headings option and change the column heading to Package Code and select OK
 * New Formula should look like the below: 
 
-LISTAGG("Packages"."Package Code")
+__LISTAGG("Packages"."Package Code")__
 
 4. Repeat Steps 3, for Reservation Overview – Reservation Preferences – Preference
 
 * New Formula should like the below
 
-LISTAGG("Reservation Preferences"."Preference")
+__LISTAGG("Reservation Preferences"."Preference")__
 
 5.	Using the Case(IF) function
 
@@ -119,20 +119,20 @@ LISTAGG("Reservation Preferences"."Preference")
 * Under the expressions folder, select the Case (if) function and select OK
 * Replace the request_condition1 with the Notifications – Reservation Notes – Notification Area attribute, and add IN (‘CHECK IN’,’RESERVATION’) in front of THEN as seen below
 
-CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN
+__CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN__
 
 * After THEN, add LISTAGG( ) around "Reservation Notes"."Comment" as seen below: 
 
-THEN LISTAGG("Reservation Notes"."Comment") ELSE
+__THEN LISTAGG("Reservation Notes"."Comment") ELSE__
 
 * After the ELSE statement, replace the expr2 with the NULL as seen below
 
-ELSE NULL END
+__ELSE NULL END__
 
 * Select on Custom Heading and change column heading to Comments and Select OK
 * New Formula should look like the below: 
 
-CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN LISTAGG("Reservation Notes"."Comment") ELSE NULL
+__CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN LISTAGG("Reservation Notes"."Comment") ELSE NULL__
 
 
 ## 5. Adding Filters to an Analysis
@@ -210,7 +210,7 @@ CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') 
 
 ![alt text](images/edit-display-section.png "Edit Display Icon")
 
-6. f.	Update the title to Arrivals Detailed, change the Prompt Display to “place Label Above Prompt” and change the buttons option to “Place buttons on side of prompt”  Select OK
+6. Update the title to Arrivals Detailed, change the Prompt Display to “place Label Above Prompt” and change the buttons option to “Place buttons on side of prompt”  Select OK
 
 ![alt text](images/edit-page-settings-arrivals-detailed.png "Edit Page Settings for Arrivals Detailed")
 
