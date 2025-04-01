@@ -77,7 +77,7 @@ List of fields:
 * Check the Custom Headings attribute and change the column heading to Guest Name.  This is important or the column name will show as the formula 
 * Column formula should look like below:
 
-"Details"."Individual Last Name"||', '||"Details"."Individual First Name"
+__"Details"."Individual Last Name"||', '||"Details"."Individual First Name"__
 
 ![alt text](images/column-formula-analysis-report.png "Column Formula using Concatenation Function in an Analysis Report")
 
@@ -90,14 +90,14 @@ List of fields:
 
 * In the formula, IFNULL("Details"."Company Name", value) highlight value, and add the Reservations Overview – Details – Travel Agent Name attribute.  
 
-IFNULL("Details"."Company Name", "Details"."Travel Agent Name") 
+__IFNULL("Details"."Company Name", "Details"."Travel Agent Name")__ 
 
 * Repeating 2 steps above, but highlighting "Details"."Travel Agent Name", add another IfNull function
 * Selecting the Value field again, replace with Reservations Overview – Details – Source Name attribute.  
 * Select the custom headings option and change the column heading to Company/TA/Source and select OK
 * New formula should look like the below:
 
-IFNULL("Details"."Company Name", IFNULL("Details"."Travel Agent Name", "Details"."Source Name"))
+__IFNULL("Details"."Company Name", IFNULL("Details"."Travel Agent Name", "Details"."Source Name"))__
 
 4.	Using the List Aggregate Function to combine multiple values in a single row
 
@@ -106,7 +106,7 @@ IFNULL("Details"."Company Name", IFNULL("Details"."Travel Agent Name", "Details"
 * Select the custom headings option and change the column heading to Package Code and select OK
 * New Formula should look like the below: 
 
-LISTAGG("Packages"."Package Code")
+__LISTAGG("Packages"."Package Code")__
 
 5.	Using the Case(IF) function
 
@@ -115,21 +115,21 @@ LISTAGG("Packages"."Package Code")
 * Under the expressions folder, select the Case (if) function and select OK
 * Replace the request_condition1 with the Reservations Overview – Details – Reservation Status attribute, and add = ‘CHECKED OUT’ in front of THEN as seen below
 
-CASE WHEN "Details"."Reservation Status"  = 'CHECKED OUT' THEN
+__CASE WHEN "Details"."Reservation Status"  = 'CHECKED OUT' THEN__
 
 * After the ELSE statement, replace the expr2 with the Revenue – Projected Room Revenue attribute as seen below: 
 
-ELSE  "Revenue"."Projected Room Revenue"  END
+__ELSE  "Revenue"."Projected Room Revenue"  END__
 
 * Select on Custom Heading and change column heading to Room Revenue and Select OK
 * New Formula should look like the below: 
 
-CASE WHEN "Details"."Reservation Status" = 'CHECKED OUT' THEN "Revenue"."Room Revenue" ELSE  "Revenue"."Projected Room Revenue"  END
+__CASE WHEN "Details"."Reservation Status" = 'CHECKED OUT' THEN "Revenue"."Room Revenue" ELSE  "Revenue"."Projected Room Revenue"  END__
 
 6.	Repeat Steps 5 using Case (If) function, and follow same steps on the Total Revenue attribute, using the Projected Total Revenue field.
 * Column formula should look like the below
 
-CASE WHEN "Details"."Reservation Status" = 'CHECKED OUT' THEN "Revenue"."Total Revenue" ELSE "Revenue"."Projected Total Revenue"  END
+__CASE WHEN "Details"."Reservation Status" = 'CHECKED OUT' THEN "Revenue"."Total Revenue" ELSE "Revenue"."Projected Total Revenue"  END__
 
 ## 5. Adding Filters to an Analysis
 
