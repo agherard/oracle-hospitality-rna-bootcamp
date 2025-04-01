@@ -190,6 +190,7 @@ List of fields:
 
 4.	Add Prompts for the following attributes, by either selecting the column name from the list, or choosing the more columns and adding it from the subject area directly. Each column will also have the operator value, user input and option values listed:
 
+||||||
 | ---------------------------------- | ---------------------------------- | ---------------------------------- | ---------------------------------- | ---------------------------------- |
 | Attribute name | Operator Value | User Input | Option Value | Default Selection |
 | Arrival Date | Between | Calendar | | |
@@ -241,4 +242,6 @@ List of fields:
 
 2. Save the analysis into the below directory as Reservation Details
 
+||
+|---------|
 | Shared Folder/{OrgCode}/Bootcamp/YOURNAME |
