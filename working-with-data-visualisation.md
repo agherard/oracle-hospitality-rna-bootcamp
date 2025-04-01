@@ -18,7 +18,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 
 ## 2. Creating a Data Visualizer Project
 
-1. After accessing Daat Visualizer, select on Create in the top right corner
+1. After accessing Data Visualizer, select on Create in the top right corner
 
 ![alt text](images/create-dv-project.png "Create Data Visualiser Project")
 
@@ -30,7 +30,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 
 ![alt text](images/select-dv-sa.png "Select Subject Areas")
 
-4. Select the following fields and add them to the table layout on the visualization as shown.  The default visualization should be table, but if needed you can select the drop down to choose it.
+4. Select the following fields and add them to the table layout on the visualization as shown. The default visualization should be a table, but if needed you can select the drop down to choose it.
 
 ![alt text](images/select-fields.png "Select Fields to add to table layout")
 
