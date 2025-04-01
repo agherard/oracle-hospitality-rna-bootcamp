@@ -18,7 +18,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 
 ![alt text](images/rna-portal.png "R&A Portal Landing Page")
 
-## 2. Accessing Analsis
+## 2. Accessing Analysis
 
 1.	From the Reporting application, on the left hand Create menu, select analysis, or select create on the right hand menu, and choose analysis.
 
