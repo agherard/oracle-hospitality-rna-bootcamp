@@ -1,0 +1,248 @@
+<saw:report xmlns:saw="com.siebel.analytics.web/report/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sawx="com.siebel.analytics.web/expression/v1.1" xmlVersion="201201160">
+   <saw:criteria xsi:type="saw:simpleCriteria" subjectArea="&quot;Statistics-History and Forecast&quot;">
+      <saw:columns>
+         <saw:column xsi:type="saw:regularColumn" columnID="c792f223e48b8e975">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cd67b0410fbd59f0e">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Calendar"."Month"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c08b46741fcebf88e">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">DAYNAME("Calendar"."Business Date")</sawx:expr></saw:columnFormula>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Calendar</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Day</saw:text></saw:caption></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="ca666a4a8d27f051b">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Calendar"."Business Date"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c42db0207e549bcd9">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room Details"."Room Class"</sawx:expr></saw:columnFormula></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c2b6712d0c5cae9bc">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Guest Details"."Number of Guests"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:number" minDigits="0" maxDigits="0" commas="true" negativeType="minus"/></saw:formatSpec></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cff8629fd3fbf7e8d">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Guest Details"."Adults"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:number" minDigits="0" maxDigits="0" commas="true" negativeType="minus"/></saw:formatSpec></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c69fbdf67e9f672f2">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Guest Details"."Children"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:number" minDigits="0" maxDigits="0" commas="true" negativeType="minus"/></saw:formatSpec></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c378bb5fde8fd09b1">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">FILTER("Revenue Details"."Room Revenue" USING ("Details"."Reservation Type" = 'B'))</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:currency" minDigits="2" maxDigits="2" commas="true" negativeType="minus" currencyTag="int:$"/></saw:formatSpec></saw:displayFormat>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Revenue Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Group Room Revenue</saw:text></saw:caption>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c84db9a550755e586">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">FILTER("Revenue Details"."Room Revenue" USING ("Details"."Reservation Type" = 'I'))</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:currency" minDigits="2" maxDigits="2" commas="true" negativeType="minus" currencyTag="int:$"/></saw:formatSpec></saw:displayFormat>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Revenue Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Individual Room Revenue</saw:text></saw:caption>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c3dda9aa72611e681">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Revenue Details"."Room Revenue"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:currency" minDigits="2" maxDigits="2" commas="true" negativeType="minus" currencyTag="int:$"/></saw:formatSpec></saw:displayFormat>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Revenue Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Total Room Revenue</saw:text></saw:caption>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c4d72a7f1a7a0d173">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Revenue Details"."Average Rate"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:currency" minDigits="2" maxDigits="2" commas="true" negativeType="minus" currencyTag="int:$"/></saw:formatSpec></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c56f31b2b587a7a36">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">FILTER("Revenue Details"."Room Revenue" USING ("Details"."Reservation Type" = 'B'))/"Room Details"."Deduct Group Rooms"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:currency" minDigits="2" maxDigits="2" commas="true" negativeType="minus" currencyTag="int:$"/></saw:formatSpec></saw:displayFormat>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Revenue Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Group ADR</saw:text></saw:caption>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c19103887019581a1">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">FILTER("Revenue Details"."Room Revenue" USING ("Details"."Reservation Type" = 'I'))/"Room Details"."Deduct Individual Rooms"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:currency" minDigits="2" maxDigits="2" commas="true" negativeType="minus" currencyTag="int:$"/></saw:formatSpec></saw:displayFormat>
+            <saw:tableHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Revenue Details</saw:text></saw:caption></saw:tableHeading>
+            <saw:columnHeading>
+               <saw:caption fmt="text">
+                  <saw:text>Individual ADR</saw:text></saw:caption>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="c150eeac338ee288c">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room Details"."Number of Rooms"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:number" minDigits="0" maxDigits="0" commas="true" negativeType="minus"/></saw:formatSpec></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="cc955a436a8fc650d">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room Details"."Deduct Individual Rooms"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:number" minDigits="0" maxDigits="0" commas="true" negativeType="minus"/></saw:formatSpec></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column>
+         <saw:column xsi:type="saw:regularColumn" columnID="ce2afe1d64e19fddd">
+            <saw:columnFormula>
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room Details"."Deduct Group Rooms"</sawx:expr></saw:columnFormula>
+            <saw:displayFormat>
+               <saw:formatSpec suppress="repeat" wrapText="true">
+                  <saw:dataFormat xsi:type="saw:number" minDigits="0" maxDigits="0" commas="true" negativeType="minus"/></saw:formatSpec></saw:displayFormat>
+            <saw:columnHeading>
+               <saw:displayFormat>
+                  <saw:formatSpec/></saw:displayFormat></saw:columnHeading></saw:column></saw:columns>
+      <saw:filter>
+         <sawx:expr xsi:type="sawx:logical" op="and">
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:comparison" op="equal">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Details"."Reservation Inventory Type"</sawx:expr>
+               <sawx:expr xsi:type="xsd:string">D</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Calendar"."Business Date"</sawx:expr></sawx:expr>
+            <sawx:expr xsi:type="sawx:special" op="prompted">
+               <sawx:expr xsi:type="sawx:sqlExpression">"Room Details"."Room Class"</sawx:expr></sawx:expr></sawx:expr></saw:filter></saw:criteria>
+   <saw:views currentView="0">
+      <saw:view xsi:type="saw:compoundView" name="compoundView!1">
+         <saw:cvTable>
+            <saw:cvRow>
+               <saw:cvCell viewName="titleView!1"/></saw:cvRow>
+            <saw:cvRow>
+               <saw:cvCell viewName="tableView!1"/></saw:cvRow></saw:cvTable></saw:view>
+      <saw:view xsi:type="saw:titleView" name="titleView!1"/>
+      <saw:view xsi:type="saw:tableView" name="tableView!1" scrollingEnabled="false" rowsPerPage="500" repeat="false">
+         <saw:edges>
+            <saw:edge axis="page" showColumnHeader="true"/>
+            <saw:edge axis="section">
+               <saw:edgeLayers>
+                  <saw:edgeLayer type="column" columnID="c792f223e48b8e975"/>
+                  <saw:edgeLayer type="column" columnID="cd67b0410fbd59f0e"/></saw:edgeLayers></saw:edge>
+            <saw:edge axis="row" showColumnHeader="true">
+               <saw:displayGrandTotals>
+                  <saw:displayGrandTotal id="gt_row" grandTotalPosition="after"/></saw:displayGrandTotals>
+               <saw:edgeLayers>
+                  <saw:edgeLayer type="column" columnID="ca666a4a8d27f051b"/>
+                  <saw:edgeLayer type="column" columnID="c08b46741fcebf88e">
+                     <saw:levels>
+                        <saw:level>
+                           <saw:displaySubTotal id="st_c08b46741fcebf88e" subTotalPosition="none"/></saw:level></saw:levels></saw:edgeLayer>
+                  <saw:edgeLayer type="column" columnID="c42db0207e549bcd9"/>
+                  <saw:edgeLayer type="column" columnID="c150eeac338ee288c"/>
+                  <saw:edgeLayer type="column" columnID="cc955a436a8fc650d"/>
+                  <saw:edgeLayer type="column" columnID="ce2afe1d64e19fddd"/>
+                  <saw:edgeLayer type="column" columnID="c2b6712d0c5cae9bc"/>
+                  <saw:edgeLayer type="column" columnID="cff8629fd3fbf7e8d"/>
+                  <saw:edgeLayer type="column" columnID="c69fbdf67e9f672f2"/>
+                  <saw:edgeLayer type="column" columnID="c378bb5fde8fd09b1"/>
+                  <saw:edgeLayer type="column" columnID="c84db9a550755e586"/>
+                  <saw:edgeLayer type="column" columnID="c3dda9aa72611e681"/>
+                  <saw:edgeLayer type="column" columnID="c56f31b2b587a7a36"/>
+                  <saw:edgeLayer type="column" columnID="c19103887019581a1"/>
+                  <saw:edgeLayer type="column" columnID="c4d72a7f1a7a0d173"/></saw:edgeLayers></saw:edge>
+            <saw:edge axis="column" showColumnHeader="rollover"/></saw:edges></saw:view></saw:views>
+   <saw:prompts scope="report" subjectArea="&quot;Statistics-History and Forecast&quot;" layout="horizontal">
+      <saw:promptStep setWidthToAllPrompts="true" labelPosition="above" buttonsPosition="side">
+         <saw:individualPrompts>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c25" subjectArea="&quot;Statistics-History and Forecast&quot;" required="false">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Property Details"."Property"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="true">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c26" subjectArea="&quot;Statistics-History and Forecast&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Calendar"."Business Date"</sawx:expr></saw:formula>
+               <saw:promptOperator op="between"/>
+               <saw:promptUIControl xsi:type="saw:calendar">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="sql" usingCodeValue="false">
+                  <saw:promptDefaultValue>SELECT "Calendar"."Business Date" FROM "Statistics-History and Forecast" where "Calendar"."Business Date" = tiemstampadd(sql_tsi_day,-30,current_date)</saw:promptDefaultValue>
+                  <saw:promptDefaultValue>SELECT "Calendar"."Business Date" FROM "Statistics-History and Forecast" where "Calendar"."Business Date" = tiemstampadd(sql_tsi_day,30,current_date)</saw:promptDefaultValue></saw:promptDefaultValues>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt>
+            <saw:prompt xsi:type="saw:columnFilterPrompt" columnID="c27" subjectArea="&quot;Statistics-History and Forecast&quot;" required="false" placedOnNewColumn="true">
+               <saw:formula>
+                  <sawx:expr xsi:type="sawx:sqlExpression">"Room Details"."Room Class"</sawx:expr></saw:formula>
+               <saw:promptOperator op="in"/>
+               <saw:promptUIControl xsi:type="saw:browse" maxChoices="-1" includeAllChoices="true">
+                  <saw:customWidth width="120" using="custompixels"/></saw:promptUIControl>
+               <saw:promptDefaultValues type="reportDefault" usingCodeValue="false"/>
+               <saw:constrainPrompt type="none" autoSelectValue="default"/>
+               <saw:setPromptVariables>
+                  <saw:setPromptVariable location="value" type="none" variableFormula=""/></saw:setPromptVariables>
+               <saw:promptSource xsi:type="saw:allChoices"/></saw:prompt></saw:individualPrompts>
+         <saw:customWidth width="120" using="custompixels"/>
+         <saw:title>
+            <saw:caption>
+               <saw:text>History and Forecast</saw:text></saw:caption></saw:title></saw:promptStep></saw:prompts></saw:report>
