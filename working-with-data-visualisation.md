@@ -2,23 +2,23 @@
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
-1. [Accessing Data Visualizer](#1-accessing-data-visualiser)
-2. [Creating a Data Visualizer Project](#2-creating-data-visualiser-project)
-3. [Creating a second Canvas](#3-creating-second-canvas)
-4. [Creating a map view with data visualizer](#4-creating-map-view-with-data-visualiser)
-5. [Saving the Data Visualizer Project](#5-saving-data-visualiser-project)
+1. [Accessing Data Visualiser](#accessing-data-visualiser)
+2. [Creating a Data Visualiser Project](#creating-a-data-visualiser-project)
+3. [Creating a second Canvas](#creating-a-second-canvas)
+4. [Creating a map view with data visualiser](#creating-a-map-view-with-data-visualiser)
+5. [Saving the Data Visualiser Project](#saving-the-data-visualiser-project)
 
 
-## 1. Accessing Data Visualizer
+## 1. Accessing Data Visualiser
 
 1. Access the R&A Portal application from your instance or the provided instance.
-2. b.	From the Portal home page, select on the Data Visualizer Tile, alternatively from the drop down menu you can select Data Visualizer.
+2. b.	From the Portal home page, select on the Data Visualiser Tile, alternatively from the drop down menu you can select Data Visualiser.
 
 ![alt text](images/rna-portal.png "R&A Portal Landing Page")
 
-## 2. Creating a Data Visualizer Project
+## 2. Creating a Data Visualiser Project
 
-1. After accessing Data Visualizer, select on Create in the top right corner
+1. After accessing Data Visualiser, select on Create in the top right corner
 
 ![alt text](images/create-dv-project.png "Create Data Visualiser Project")
 
@@ -56,11 +56,11 @@ Getting started with Oracle Hospitality Reporting and Analytics
 
 ![alt text](images/add-second-canvas.png "Select Second Canvas")
 
-## 4. Creating a map view with data visualizer
+## 4. Creating a map view with data Visualiser
 
 1. Select the field, Marketing - County Code ,  and add to the presentation canvas
 
-2. Under auto visualization drop down, change view to map
+2. Under auto visualisation drop down, change view to map
 
 ![alt text](images/create-map-visualisation.png "Select Map Visualisation")
 
@@ -80,7 +80,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 
 ![alt text](images/manage-color-assigments.png "Manage Colors Assignments")
 
-## 5. Saving the Data Visualizer Project
+## 5. Saving the Data Visualiser Project
 
 1. Select the dropdown arrow, next to the Disk Icon in the top right corner and choose Save As
 

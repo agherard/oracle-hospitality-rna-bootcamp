@@ -2,14 +2,14 @@
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
-1. [Accessing the Reporting Application](#1-accessing-reporting-application)
-2. [Accessing Analysis](#2-accessing-analysis)
-3. [Adding Columns and measures to an analysis](#3-adding-columns-and-measures-to-analysis)
-4. [Editing Column Formulas](#4-editing-column-formulas)
-5. [Adding Filters to an analysis](#5-adding-filters-to-analysis)
-6. [Adding Prompts to an Analysis](#6-adding-prompts-to-analysis)
-7. [Setting the View Order](#7-setting-view-order)
-8. [Saving the analysis](#8-saving-analysis)
+1. [Accessing the Reporting Application](#accessing-the-reporting-application)
+2. [Accessing Analysis](#accessing-analysis)
+3. [Adding Columns and measures to an analysis](#adding-columns-and-measures-to-an-analysis)
+4. [Editing Column Formulas](#editing-column-formulas)
+5. [Adding Filters to an analysis](#adding-filters-to-an-analysis)
+6. [Adding Prompts to an Analysis](#adding-prompts-to-an-analysis)
+7. [Setting the View Order](#setting-the-view-order)
+8. [Saving the Analysis](#saving-the-analysis)
 
 ## 1. Accessing the Reporting Application
 
@@ -215,7 +215,7 @@ __CASE WHEN "Details"."Reservation Status" = 'CHECKED OUT' THEN "Revenue"."Total
 
 ![alt text](images/re-arrange-columns-criteria-section-2.png "Re-Arrange Columns in Criteria Section")
 
-## 8. Saving the analysis
+## 8. Saving the Analysis
 
 1. Select the Save as icon
 

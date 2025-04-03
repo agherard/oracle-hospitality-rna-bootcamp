@@ -2,8 +2,8 @@
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
-1. [Accessing Reports](#1-accessing-catalog)
-2. [Converting an Analysis Report to a BIP Publisher Report](#2-converting-an-anaysis-report-to-a-bi-report-report)
+1. [Accessing Reports](#accessing-catalog)
+2. [Converting an Analysis Report to a BIP Publisher Report](#converting-an-analysis-report-to-a-bi-publisher-report)
 
 ## 1. Accessing Catalog
 
