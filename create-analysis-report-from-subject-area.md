@@ -9,7 +9,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 5. [Adding Filters to an analysis](#adding-filters-to-an-analysis)
 6. [Adding Prompts to an Analysis](#adding-prompts-to-an-analysis)
 7. [Setting the View Order](#setting-the-view-order)
-8. [Saving the Analysis](#saving-the-analysis)
+8. [Saving the Analysis](#8-saving-the-analysis)
 
 ## 1. Accessing the Reporting Application
 
