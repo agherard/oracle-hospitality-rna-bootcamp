@@ -8,5 +8,5 @@ Materials for a bootcamp on Oracle Hospitality Reporting &amp; Analytics
 4. [Create BI Publisher Report from Subject Area (Lab)](create-bip-report-from-subject-area.md)
 5. [Scheduling and Bursting (Lab)](scheduling-bursting.md)
 6. [Convert Analysis Report to BI Publisher Report (Lab)](convert-analysis-report-to-bi-publisher-report.md)
-7. [Working with Data Visulisation](working-with-data-visualisation.md)
+7. [Working with Data Visulisation (Lab)](working-with-data-visualisation.md)
 8. [Advanced Functions and Filtering (Lab)](advanced-functions-filtering.md)
