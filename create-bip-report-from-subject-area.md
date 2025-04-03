@@ -2,8 +2,8 @@
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
-1. [Accessing Reports](#accessing-reports)
-2. [Creating a BI Publisher Report from a Subject Area](#creating-a-bi-publisher-report-from-a-subject-area)
+1. [Accessing Reports](#1-accessing-reports)
+2. [Creating a BI Publisher Report from a Subject Area](#2-creating-a-bi-publisher-report-from-a-subject-area)
 
 ## 1. Accessing Reports
 
