@@ -2,11 +2,11 @@
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
-1. [Accessing Data Visualiser](#accessing-data-visualiser)
-2. [Creating a Data Visualiser Project](#creating-a-data-visualiser-project)
-3. [Creating a second Canvas](#creating-a-second-canvas)
-4. [Creating a map view with data visualiser](#creating-a-map-view-with-data-visualiser)
-5. [Saving the Data Visualiser Project](#saving-the-data-visualiser-project)
+1. [Accessing Data Visualiser](#1-accessing-data-visualiser)
+2. [Creating a Data Visualiser Project](#2-creating-a-data-visualiser-project)
+3. [Creating a second Canvas](#3-creating-a-second-canvas)
+4. [Creating a map view with data visualiser](#4-creating-a-map-view-with-data-visualiser)
+5. [Saving the Data Visualiser Project](#5-saving-the-data-visualiser-project)
 
 
 ## 1. Accessing Data Visualiser
