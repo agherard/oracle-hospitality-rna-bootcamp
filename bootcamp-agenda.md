@@ -6,15 +6,15 @@
 |-----------|-------------------------------------------------------------------------------|
 |08:30-09:00|Coffee                                                                         |
 |09:00-09:30|R&A Overview                                                                   |
-|09:00-11:00|User / Group Setup / Application Portal                                        |
+|09:30-11:00|R&A Basic Concepts                                                             |
 |11:00-11:10|Coffee                                                                         |
-|11:10-12:10|Catalogue / Analytics Reports with Subject Areas / Filters and Custom Functions|
-|12:10-13:00|Analytics Reports (Labs)                                                       |
+|11:10-12:10|Analytics Reports with Subject Areas - Part 1 (Lab)                            |
+|12:10-13:00|Arrivals Detailed Analysis Report - Part 2 (Optional Lab)                      |
 |13:00-13:45|Lunch                                                                          |
-|13:45-15:00|Data Model / BI Publisher Reports                                              |
-|15:00-16:30|Data Model / BI Publisher Reports (Labs)                                       |
+|13:45-15:00|Create BI Publisher Report from Subject Area (Lab)                             |
+|15:00-16:30|Scheduling and Bursting (Lab)                                                  |
 |16:30-16:40|Coffee                                                                         |
-|16:40-18:00|Analytics / BI Publisher Reports (Labs)                                        |
+|16:40-18:00|Convert an Analysis Report to a BI Publisher Reports (Lab)                     |
 
 ## Reporting & Analytics II
 
