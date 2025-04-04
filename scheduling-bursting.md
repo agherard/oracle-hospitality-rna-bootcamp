@@ -3,7 +3,7 @@
 Getting started with Oracle Hospitality Reporting and Analytics
 
 1. [Accessing the Reporting Application](#1-accessing-the-reporting-application)
-2. [Scheduling an Analysis Report](#2-schedluling-an-analysis-report)
+2. [Scheduling an Analysis Report](#2-scheduling-an-analysis-report)
 3. [Job Scheduler and Bursting BI Publisher Reports](#3-job-scheduler-and-bursting-bi-publisher-reports)
 
 ## 1. Accessing the Reporting Application
