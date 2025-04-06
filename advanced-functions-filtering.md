@@ -2,10 +2,10 @@
 
 Getting started with Oracle Hospitality Reporting and Analytics
 
-1. [Accessing the Reporting Application](#accessing-the-reporting-application)
-2. [Accessing Analysis](#accessing-analysis)
-3. [Utilizing SQL to Filter Dates Dynamically and 1st alphabetically listed resort in a prompt](#utilizing-sql-to-filter-dates-dynamically-and-1st-alphabetically-listed-in-a-prompt)
-4. [Utilizing LISTAGG Function to combine Package Codes into a Single Column Output](#utilizing-list-agg-function-to-combine-package-codes-into-a-single-column-output)
+1. [Accessing the Reporting Application](#1-accessing-the-reporting-application)
+2. [Accessing Analysis](#2-accessing-analysis)
+3. [Utilizing SQL to Filter Dates Dynamically and 1st alphabetically listed resort in a prompt](#3-utilizing-sql-to-filter-dates-dynamically-and-1st-alphabetically-listed-in-a-prompt)
+4. [Utilizing LISTAGG Function to combine Package Codes into a Single Column Output](#4-utilizing-list-agg-function-to-combine-package-codes-into-a-single-column-output)
 
 ## 1. Accessing the Reporting Application
 
