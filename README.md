@@ -1,6 +1,6 @@
 # oracle-hospitality-rna-bootcamp
 
-Materials for a bootcamp on Oracle Hospitality Reporting &amp; Analytics
+Materials for the bootcamp on Oracle Hospitality Reporting &amp; Analytics
 
 1. [Agenda](bootcamp-agenda.md)
 2. [Create Analysis Report from Subject Area (Lab)](create-analysis-report-from-subject-area.md)
