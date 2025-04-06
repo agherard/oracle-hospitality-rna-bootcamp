@@ -93,7 +93,7 @@ List of fields:
 * Check the Custom Headings attribute and change the column heading to Guest Name.  This is important or the column name will show as the formula 
 * Column formula should look like below:
 
-__"Details"."Individual Last Name"||', '||"Details"."Individual First Name"__
+```"Details"."Individual Last Name"||', '||"Details"."Individual First Name"```
 
 ![alt text](images/column-formula-analysis-report.png "Column Formula using Concatenation Function in an Analysis Report")
 
@@ -104,13 +104,13 @@ __"Details"."Individual Last Name"||', '||"Details"."Individual First Name"__
 * Select the custom headings option and change the column heading to Package Code and select OK
 * New Formula should look like the below: 
 
-__LISTAGG("Packages"."Package Code")__
+```LISTAGG("Packages"."Package Code")```
 
 4. Repeat Steps 3, for Reservation Overview – Reservation Preferences – Preference
 
 * New Formula should like the below
 
-__LISTAGG("Reservation Preferences"."Preference")__
+```LISTAGG("Reservation Preferences"."Preference")```
 
 5.	Using the Case(IF) function
 
@@ -119,20 +119,20 @@ __LISTAGG("Reservation Preferences"."Preference")__
 * Under the expressions folder, select the Case (if) function and select OK
 * Replace the request_condition1 with the Notifications – Reservation Notes – Notification Area attribute, and add IN (‘CHECK IN’,’RESERVATION’) in front of THEN as seen below
 
-__CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN__
+```CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN```
 
 * After THEN, add LISTAGG( ) around "Reservation Notes"."Comment" as seen below: 
 
-__THEN LISTAGG("Reservation Notes"."Comment") ELSE__
+```THEN LISTAGG("Reservation Notes"."Comment") ELSE```
 
 * After the ELSE statement, replace the expr2 with the NULL as seen below
 
-__ELSE NULL END__
+```ELSE NULL END```
 
 * Select on Custom Heading and change column heading to Comments and Select OK
 * New Formula should look like the below: 
 
-__CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN LISTAGG("Reservation Notes"."Comment") ELSE NULL__
+```CASE WHEN "Reservation Notes"."Notification Area" in ('CHECK IN','RESERVATION') THEN LISTAGG("Reservation Notes"."Comment") ELSE NULL```
 
 
 ## 5. Adding Filters to an Analysis
