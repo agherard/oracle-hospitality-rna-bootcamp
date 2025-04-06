@@ -125,6 +125,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
  
 8.	Copy the below SQL query into the SQL Query window.  In the next step we will update the parameters to match what is required. 
 
+```
 select DISTINCT
 RESORT KEY,
 'TEMPLATE_NAME' TEMPLATE,
@@ -140,6 +141,7 @@ RESORT KEY,
 'EMAIL_BODY' PARAMETER5,
 'true' PARAMETER6
 from RESORT
+```
 
 9.	Update the following rows in the query to correct the parameters to meet your specific job
 
