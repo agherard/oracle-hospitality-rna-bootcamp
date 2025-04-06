@@ -48,7 +48,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
  
 5.	Replace the entire SQL formula with the below formula, to filter the data from the first day of the previous month through the last day of the current month and select OK
 
-```sql "Calendar"."Business Date" between TIMESTAMPADD(SQL_TSI_MONTH, -1, TIMESTAMPADD( SQL_TSI_DAY , DAYOFMONTH( CURRENT_DATE) * -(1) + 1, CURRENT_DATE)) and TIMESTAMPADD( SQL_TSI_DAY , -(1), TIMESTAMPADD( SQL_TSI_MONTH , 1, TIMESTAMPADD( SQL_TSI_DAY , DAYOFMONTH( CURRENT_DATE) * -(1) + 1, CURRENT_DATE))) ```
+```"Calendar"."Business Date" between TIMESTAMPADD(SQL_TSI_MONTH, -1, TIMESTAMPADD( SQL_TSI_DAY , DAYOFMONTH( CURRENT_DATE) * -(1) + 1, CURRENT_DATE)) and TIMESTAMPADD( SQL_TSI_DAY , -(1), TIMESTAMPADD( SQL_TSI_MONTH , 1, TIMESTAMPADD( SQL_TSI_DAY , DAYOFMONTH( CURRENT_DATE) * -(1) + 1, CURRENT_DATE))) ```
  
 ![alt text](images/edit-advanced-sql-query-filter.png "Edit Advanced SQL Filter")
  
@@ -72,7 +72,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 	
 11. Copy the below into the formula field, to list the 1st alphabetically listed resort and select OK
 
-```sql Select MIN("Property Details"."Property") FROM "Bookings-Reservation" ```
+```Select MIN("Property Details"."Property") FROM "Bookings-Reservation" ```
 
 ![alt text](images/query-for-sql-results.png "Query for SQL Results")
  
@@ -132,7 +132,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
  
 10. In front of the "Packages"."Package Code" add LISTAGG( and close the parenthesis at the end
 
-* The formula should now be the below ```sql LISTAGG("Packages"."Package Code")```
+* The formula should now be the below ```LISTAGG("Packages"."Package Code")```
 
 11. Select the Custom Headings check box to maintain the name of the column and select OK
 
@@ -152,7 +152,7 @@ Getting started with Oracle Hospitality Reporting and Analytics
 
 15. Copy the below into the formula field, to list the 1st alphabetically listed resort and select OK
 
-```sql Select MIN("Property Details"."Property") FROM "Bookings-Reservation"```
+```Select MIN("Property Details"."Property") FROM "Bookings-Reservation"```
  
 ![alt text](images/edit-sql-results-order-alphabetically.png "Edit SQL Results to list the 1st alphabetically listed resort") 
 
